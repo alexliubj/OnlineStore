@@ -1,0 +1,32 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+<%@ Register Src="UserControls/UserInfo.ascx" TagName="UserInfo" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <title>Untitled Page</title>
+</head>
+<body>
+  <form id="form1" runat="server">
+    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+      <tr = valign="top">
+        <td width="220">
+          <uc1:UserInfo ID="UserInfo1" runat="server" />
+        </td>
+        <td valign="top">
+          <span class="AdminTitle">
+            <% Response.Write(ConfigurationManager.AppSettings["SiteName"]); %>
+          </span> 
+          (<a href="Default.aspx" class="AdminPageText">go back 
+          to BalloonShop</a>)
+          <br />
+          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+          </asp:ContentPlaceHolder>
+        </td>
+      </tr>
+    </table>
+    <br />
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+  </form>
+</body>
+</html>

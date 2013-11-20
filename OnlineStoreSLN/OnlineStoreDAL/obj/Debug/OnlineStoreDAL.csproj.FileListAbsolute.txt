@@ -1,0 +1,9 @@
+C:\Users\Administrator\Desktop\Projects\ProjTemplate\OnlineStoreSLN\OnlineStoreDAL\bin\Debug\OnlineStoreDAL.dll
+C:\Users\Administrator\Desktop\Projects\ProjTemplate\OnlineStoreSLN\OnlineStoreDAL\bin\Debug\OnlineStoreDAL.pdb
+C:\Users\Administrator\Desktop\Projects\ProjTemplate\OnlineStoreSLN\OnlineStoreDAL\obj\Debug\OnlineStoreDAL.dll
+C:\Users\Administrator\Desktop\Projects\ProjTemplate\OnlineStoreSLN\OnlineStoreDAL\obj\Debug\OnlineStoreDAL.pdb
+Z:\project web\New folder\OnlineStore-master\OnlineStoreSLN\OnlineStoreDAL\bin\Debug\OnlineStoreDAL.dll
+Z:\project web\New folder\OnlineStore-master\OnlineStoreSLN\OnlineStoreDAL\bin\Debug\OnlineStoreDAL.pdb
+Z:\project web\New folder\OnlineStore-master\OnlineStoreSLN\OnlineStoreDAL\obj\Debug\OnlineStoreDAL.csprojResolveAssemblyReference.cache
+Z:\project web\New folder\OnlineStore-master\OnlineStoreSLN\OnlineStoreDAL\obj\Debug\OnlineStoreDAL.dll
+Z:\project web\New folder\OnlineStore-master\OnlineStoreSLN\OnlineStoreDAL\obj\Debug\OnlineStoreDAL.pdb
