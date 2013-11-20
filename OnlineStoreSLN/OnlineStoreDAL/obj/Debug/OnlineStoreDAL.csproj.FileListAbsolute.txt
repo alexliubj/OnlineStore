@@ -1,4 +1,0 @@
-C:\Users\Administrator\Desktop\Projects\ProjTemplate\OnlineStoreSLN\OnlineStoreDAL\bin\Debug\OnlineStoreDAL.dll
-C:\Users\Administrator\Desktop\Projects\ProjTemplate\OnlineStoreSLN\OnlineStoreDAL\bin\Debug\OnlineStoreDAL.pdb
-C:\Users\Administrator\Desktop\Projects\ProjTemplate\OnlineStoreSLN\OnlineStoreDAL\obj\Debug\OnlineStoreDAL.dll
-C:\Users\Administrator\Desktop\Projects\ProjTemplate\OnlineStoreSLN\OnlineStoreDAL\obj\Debug\OnlineStoreDAL.pdb

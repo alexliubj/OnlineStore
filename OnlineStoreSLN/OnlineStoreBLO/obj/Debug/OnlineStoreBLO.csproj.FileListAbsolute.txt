@@ -1,7 +1,0 @@
-C:\Users\Administrator\Desktop\Projects\ProjTemplate\OnlineStoreSLN\OnlineStoreBLO\bin\Debug\OnlineStoreBLO.dll
-C:\Users\Administrator\Desktop\Projects\ProjTemplate\OnlineStoreSLN\OnlineStoreBLO\bin\Debug\OnlineStoreBLO.pdb
-C:\Users\Administrator\Desktop\Projects\ProjTemplate\OnlineStoreSLN\OnlineStoreBLO\bin\Debug\OnlineStoreDAL.dll
-C:\Users\Administrator\Desktop\Projects\ProjTemplate\OnlineStoreSLN\OnlineStoreBLO\bin\Debug\OnlineStoreDAL.pdb
-C:\Users\Administrator\Desktop\Projects\ProjTemplate\OnlineStoreSLN\OnlineStoreBLO\obj\Debug\OnlineStoreBLO.csprojResolveAssemblyReference.cache
-C:\Users\Administrator\Desktop\Projects\ProjTemplate\OnlineStoreSLN\OnlineStoreBLO\obj\Debug\OnlineStoreBLO.dll
-C:\Users\Administrator\Desktop\Projects\ProjTemplate\OnlineStoreSLN\OnlineStoreBLO\obj\Debug\OnlineStoreBLO.pdb
