@@ -25,6 +25,10 @@
           </uc4:SearchBox>
           <br />
           <uc6:CartSummary ID="CartSummary1" runat="server" />
+          <br />
+          <asp:SiteMapPath ID="SiteMapPath1" Runat="server"></asp:SiteMapPath>
+<asp:SiteMapDataSource ID="SiteMapDataSource1" Runat="server" />
+<asp:Menu ID="Menu2" Runat="server" DataSourceID="SiteMapDataSource1"/>
         </td>
         <td valign="top">
           <uc1:Header ID="Header1" runat="server" />

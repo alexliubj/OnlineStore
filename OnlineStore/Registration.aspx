@@ -1,13 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="W9.master" AutoEventWireup="true" CodeFile="Registration.aspx.cs" Inherits="Week10" %>
+﻿
+<%@ Page Language="C#" MasterPageFile="~/BalloonShop.master" AutoEventWireup="true"
+  CodeFile="Registration.aspx.cs" Inherits="Registriation" Title="Register" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <style type="text/css">
-    .auto-style2 {
-        width: 800px;
-    }
-</style>
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+<asp:Content ID="Content2" ContentPlaceHolderID="contentPlaceHolder" runat="Server">
     <h4>Registration Form</h4>
 <table class="auto-style2">
     <tr>

@@ -8,7 +8,7 @@ using OnlineStoreBLO;
 using OnlineStoreDAL;
 using OnlineStoreDAL.Models;
 
-public partial class Week10 : System.Web.UI.Page
+public partial class Registriation : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
