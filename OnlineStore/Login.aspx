@@ -2,7 +2,7 @@
   CodeFile="Login.aspx.cs" Inherits="Login" Title="Untitled Page" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="contentPlaceHolder" runat="Server">
-  <asp:Login ID="login" runat="server">
+    &nbsp;<asp:Login ID="login" runat="server">
     <LayoutTemplate>
       <table border="0" cellpadding="1">
         <tr class="UserInfoText">
@@ -10,7 +10,7 @@
             <table border="0" cellpadding="0">
               <tr>
                 <td class="CatalogTitle" align="left" colspan="2">
-                  Who Are You?<br /><br />
+                    Please Logon<br /><br />
                 </td>
               </tr>
               <tr>
@@ -41,11 +41,9 @@
                   <asp:Literal ID="FailureText" runat="server" EnableViewState="False"></asp:Literal>
                 </td>
               </tr>
-              <tr><td align="right" colspan="2">
-                  <asp:Button ID="Button1" runat="server" CommandName="Login" Text="Register" ValidationGroup="" OnClick="Button1_Click" />
-                </td>
+              <tr>
                 <td align="right" colspan="2">
-                  <asp:Button ID="LoginButton" runat="server" CommandName="Login" Text="Log In" ValidationGroup="Login1" OnClick="LoginButton_Click" />
+                  <asp:Button ID="LoginButton" runat="server" CommandName="Login" Text="Log In" ValidationGroup="Login1" />
                 </td>
               </tr>
             </table>

@@ -1,12 +1,12 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeFile="DepartmentsAdmin.ascx.cs" Inherits="DepartmentsAdmin" %>
-<asp:Label ID="statusLabel" runat="server" CssClass="AdminPageText" Text="Departments Loaded"></asp:Label><br />
+<asp:Label ID="statusLabel" runat="server" CssClass="AdminPageText" Text="Brands Loaded"></asp:Label><br />
 <br />
-<asp:Label ID="locationLabel" runat="server" CssClass="AdminPageText" Text="These are your departments:"></asp:Label><br />
+<asp:Label ID="locationLabel" runat="server" CssClass="AdminPageText" Text="These are your brands:"></asp:Label><br />
 <br />
 <asp:GridView ID="grid" runat="server" AutoGenerateColumns="False" DataKeyNames="DepartmentID" Width="100%" OnRowCancelingEdit="grid_RowCancelingEdit" OnRowDeleting="grid_RowDeleting" OnRowEditing="grid_RowEditing" OnRowUpdating="grid_RowUpdating">
   <Columns>
-    <asp:BoundField DataField="Name" HeaderText="Department Name" SortExpression="Name" />
-    <asp:TemplateField HeaderText="Department Description" SortExpression="Description">
+    <asp:BoundField DataField="Name" HeaderText="Brand Name" SortExpression="Name" />
+    <asp:TemplateField HeaderText="Brand Description" SortExpression="Description">
       <ItemTemplate>
         <asp:Label ID="Label1" runat="server" Text='<%# Bind("Description") %>'></asp:Label>
       </ItemTemplate>
@@ -21,7 +21,7 @@
   </Columns>
 </asp:GridView>
 <br />
-<span class="AdminPageText">Create a new department:</span>
+<span class="AdminPageText">Create a new brand:</span>
 <table class="AdminPageText" cellspacing="0">
   <tr>
     <td valign="top" width="100">Name:

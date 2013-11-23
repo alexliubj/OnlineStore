@@ -12,3 +12,10 @@ Z:\project web\New folder\OnlineStore-master\OnlineStoreSLN\OnlineStoreBLO\bin\D
 Z:\project web\New folder\OnlineStore-master\OnlineStoreSLN\OnlineStoreBLO\obj\Debug\OnlineStoreBLO.csprojResolveAssemblyReference.cache
 Z:\project web\New folder\OnlineStore-master\OnlineStoreSLN\OnlineStoreBLO\obj\Debug\OnlineStoreBLO.dll
 Z:\project web\New folder\OnlineStore-master\OnlineStoreSLN\OnlineStoreBLO\obj\Debug\OnlineStoreBLO.pdb
+C:\Users\300756885\Documents\GitHub\OnlineStore\OnlineStoreSLN\OnlineStoreBLO\bin\Debug\OnlineStoreBLO.dll
+C:\Users\300756885\Documents\GitHub\OnlineStore\OnlineStoreSLN\OnlineStoreBLO\bin\Debug\OnlineStoreBLO.pdb
+C:\Users\300756885\Documents\GitHub\OnlineStore\OnlineStoreSLN\OnlineStoreBLO\bin\Debug\OnlineStoreDAL.dll
+C:\Users\300756885\Documents\GitHub\OnlineStore\OnlineStoreSLN\OnlineStoreBLO\bin\Debug\OnlineStoreDAL.pdb
+C:\Users\300756885\Documents\GitHub\OnlineStore\OnlineStoreSLN\OnlineStoreBLO\obj\Debug\OnlineStoreBLO.csprojResolveAssemblyReference.cache
+C:\Users\300756885\Documents\GitHub\OnlineStore\OnlineStoreSLN\OnlineStoreBLO\obj\Debug\OnlineStoreBLO.dll
+C:\Users\300756885\Documents\GitHub\OnlineStore\OnlineStoreSLN\OnlineStoreBLO\obj\Debug\OnlineStoreBLO.pdb

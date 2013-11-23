@@ -5,7 +5,7 @@
 <asp:HyperLink ID="previousLink" runat="server" CssClass="PagingText" Visible="false">Previous</asp:HyperLink>
 &nbsp;&nbsp;
 <asp:HyperLink ID="nextLink" runat="server" CssClass="PagingText" Visible="false">Next</asp:HyperLink>
-<asp:DataList ID="list" Runat="server" RepeatColumns="2" EnableViewState="False" OnItemCommand="list_ItemCommand">
+<asp:DataList ID="list" Runat="server" RepeatColumns="3" EnableViewState="False" OnItemCommand="list_ItemCommand">
   <ItemTemplate>
     <table cellPadding="0" align="left">
       <tr height="105">

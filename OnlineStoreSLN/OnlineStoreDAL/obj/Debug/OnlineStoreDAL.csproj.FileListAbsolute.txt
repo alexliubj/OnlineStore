@@ -7,3 +7,7 @@ Z:\project web\New folder\OnlineStore-master\OnlineStoreSLN\OnlineStoreDAL\bin\D
 Z:\project web\New folder\OnlineStore-master\OnlineStoreSLN\OnlineStoreDAL\obj\Debug\OnlineStoreDAL.csprojResolveAssemblyReference.cache
 Z:\project web\New folder\OnlineStore-master\OnlineStoreSLN\OnlineStoreDAL\obj\Debug\OnlineStoreDAL.dll
 Z:\project web\New folder\OnlineStore-master\OnlineStoreSLN\OnlineStoreDAL\obj\Debug\OnlineStoreDAL.pdb
+C:\Users\300756885\Documents\GitHub\OnlineStore\OnlineStoreSLN\OnlineStoreDAL\bin\Debug\OnlineStoreDAL.dll
+C:\Users\300756885\Documents\GitHub\OnlineStore\OnlineStoreSLN\OnlineStoreDAL\bin\Debug\OnlineStoreDAL.pdb
+C:\Users\300756885\Documents\GitHub\OnlineStore\OnlineStoreSLN\OnlineStoreDAL\obj\Debug\OnlineStoreDAL.dll
+C:\Users\300756885\Documents\GitHub\OnlineStore\OnlineStoreSLN\OnlineStoreDAL\obj\Debug\OnlineStoreDAL.pdb

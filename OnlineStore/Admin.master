@@ -3,6 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link href="new.css" rel="stylesheet" type="text/css" />
   <title>Untitled Page</title>
 </head>
 <body>
@@ -14,10 +15,10 @@
         </td>
         <td valign="top">
           <span class="AdminTitle">
-            <% Response.Write(ConfigurationManager.AppSettings["SiteName"]); %>
+           <%-- <% Response.Write(ShopConfiguration.SiteName); %>--%>
           </span> 
           (<a href="Default.aspx" class="AdminPageText">go back 
-          to BalloonShop</a>)
+          to FashionStore</a>)
           <br />
           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
           </asp:ContentPlaceHolder>

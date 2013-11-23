@@ -1,0 +1,9 @@
+﻿.CatalogTitle
+    {color:Olive; font-size:medium; font-family:Segoe UI Light;}
+.CatalogDescription
+    {color:Olive; font-size:medium; font-family:Segoe UI Light;}
+html{background:#FFFFCC;text-align:center;}
+	
+body{width:980px;margin:0 auto;text-align:left;background:white; font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif}
+
+uc1, uc2, uc3, uc4 {background:#686868 }

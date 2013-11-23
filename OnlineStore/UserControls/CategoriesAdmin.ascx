@@ -2,8 +2,8 @@
   Inherits="CategoriesAdmin" %>
 <asp:Label ID="statusLabel" runat="server" CssClass="AdminPageText" Text="Categories Loaded"></asp:Label><br />
 <br />
-<asp:Label ID="locationLabel" runat="server" CssClass="AdminPageText" Text="Displaying categories for department..."></asp:Label>
-<asp:LinkButton ID="goBackLink" runat="server" CssClass="AdminPageText" OnClick="goBackLink_Click">(go back to departments)</asp:LinkButton><br />
+<asp:Label ID="locationLabel" runat="server" CssClass="AdminPageText" Text="Displaying categories for brand..."></asp:Label>
+<asp:LinkButton ID="goBackLink" runat="server" CssClass="AdminPageText" OnClick="goBackLink_Click">(go back to brand)</asp:LinkButton><br />
 <br />
 <asp:GridView ID="grid" runat="server" AutoGenerateColumns="False" DataKeyNames="CategoryID"
   Width="100%" OnRowCancelingEdit="grid_RowCancelingEdit" OnRowDeleting="grid_RowDeleting" OnRowEditing="grid_RowEditing" OnRowUpdating="grid_RowUpdating">
@@ -31,7 +31,7 @@
   </Columns>
 </asp:GridView>
 <br />
-<span class="AdminPageText">Create a new category in this department:</span>
+<span class="AdminPageText">Create a new category for this brand:</span>
 <table class="AdminPageText" cellspacing="0">
   <tr>
     <td valign="top" width="100">

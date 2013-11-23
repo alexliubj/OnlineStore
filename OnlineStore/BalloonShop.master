@@ -8,35 +8,38 @@
 <%@ Register Src="UserControls/Header.ascx" TagName="Header" TagPrefix="uc1" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-  <title>BalloonShop</title>
+<head id="Head1" runat="server">
+  <title>Fashion Store</title>
+    <link href="new.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
   <form id="Form1" runat="server">
     <table cellspacing="0" cellpadding="0" width="770" border="0">
-      <tr>
-        <td width="220" valign="top">
-          <uc5:UserInfo ID="UserInfo1" runat="server" />
-          <br />
-          <uc2:DepartmentsList ID="DepartmentsList1" runat="server" />
-          <br />
-          <uc3:CategoriesList ID="CategoriesList1" runat="server" />
-          <uc4:SearchBox id="SearchBox1" runat="server">
-          </uc4:SearchBox>
-          <br />
-          <uc6:CartSummary ID="CartSummary1" runat="server" />
-          <br />
-          <asp:SiteMapPath ID="SiteMapPath1" Runat="server"></asp:SiteMapPath>
-<asp:SiteMapDataSource ID="SiteMapDataSource1" Runat="server" />
-<asp:Menu ID="Menu2" Runat="server" DataSourceID="SiteMapDataSource1"/>
-        </td>
-        <td valign="top">
-          <uc1:Header ID="Header1" runat="server" />
-          <asp:ContentPlaceHolder ID="contentPlaceHolder" runat="server">
-          </asp:ContentPlaceHolder>
-        </td>
-      </tr>
-    </table>
+                <tr>
+                    <td colspan = "2"><uc1:Header ID="Header" runat="server" /></td>
+                </tr>
+                   
+                  <tr>
+                    <td> 
+                        <uc2:DepartmentsList ID="DepartmentsList" runat="server" /><br />
+                        <uc3:CategoriesList ID="CategoriesList" runat="server" /><br />
+                        <uc4:SearchBox id="SearchBox" runat="server"></uc4:SearchBox>
+                    </td>
+
+                     <td>
+                     <uc5:UserInfo ID="UserInfo" runat="server" /><br />
+                     <uc6:CartSummary ID="CartSummary" runat="server" />
+                     </td>
+                      
+                  </tr>
+
+                <tr>
+                   <td colspan = "2"> <asp:ContentPlaceHolder ID="contentPlaceHolder" runat="server"></asp:ContentPlaceHolder></td>
+                </tr>
+                
+            </table>
+ 
   </form>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeFile="UserInfo.ascx.cs" Inherits="UserInfo" %>
-<table cellspacing="0" border="0" width="200px" class="UserInfoContent">
+<table cellspacing="0" border="0" class="UserInfoContent" style="width: 185px">
   <tr>
     <td class="UserInfoHead">
       User Info</td>
@@ -8,14 +8,14 @@
     <AnonymousTemplate>
       <tr>
         <td>
-          <span class="UserInfoText">You are not logged in.</span>
+          <span class="UserInfoText">Please log in.</span>
         </td>
       </tr>
       <tr>
         <td>
-          &nbsp;&raquo;
+          &nbsp;
             <asp:LoginStatus ID="LoginStatus1" runat="server" CssClass="UserInfoLink" />
-          &nbsp;&laquo;
+          &nbsp;
         </td>
       </tr>
     </AnonymousTemplate>
@@ -24,36 +24,36 @@
         <ContentTemplate>
           <tr>
             <td>
-              <asp:LoginName ID="LoginName2" runat="server" FormatString="You are logged in as <b>{0}</b>. "
+              <asp:LoginName ID="LoginName2" runat="server" FormatString="Welcome <b>{0}</b>."
                 CssClass="UserInfoText" />
             </td>
           </tr>
           <tr>
             <td>
-              &nbsp;&raquo;
+              &nbsp;
                 <asp:LoginStatus ID="LoginStatus2" runat="server" CssClass="UserInfoLink" />
-              &nbsp;&laquo;
+              &nbsp;
             </td>
           </tr>
           <tr>
             <td>
-              &nbsp;&raquo;
+              &nbsp;
                 <a class="UserInfoLink" href="CatalogAdmin.aspx">Catalog Admin</a>
-              &nbsp;&laquo;
+              &nbsp;
             </td>
           </tr>
           <tr>
             <td>
-              &nbsp;&raquo;
+              &nbsp;
                 <a class="UserInfoLink" href="ShoppingCartAdmin.aspx">Shopping Cart Admin</a>
-              &nbsp;&laquo;
+              &nbsp;
             </td>
           </tr>
           <tr>
             <td>
-              &nbsp;&raquo; 
+              &nbsp;
                 <a class="UserInfoLink" href="OrdersAdmin.aspx">Orders Admin</a> 
-              &nbsp;&laquo;
+              &nbsp;
             </td>
           </tr>
         </ContentTemplate>

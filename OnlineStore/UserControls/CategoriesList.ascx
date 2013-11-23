@@ -1,7 +1,8 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeFile="CategoriesList.ascx.cs" Inherits="CategoriesList" %>
-<asp:DataList ID="list" runat="server" CssClass="CategoryListContent" Width="200px">
+<asp:DataList ID="list" runat="server" CssClass="CategoryListContent" 
+    Width="600px" RepeatColumns="5" style="margin-bottom: 0px">
   <ItemTemplate>
-    &nbsp;&raquo;
+    &nbsp; 
     <asp:HyperLink 
       ID="HyperLink1" 
       Runat="server" 
@@ -10,10 +11,10 @@
       ToolTip='<%# Eval("Description") %>' 
       CssClass='<%# Eval("CategoryID").ToString() == Request.QueryString["CategoryID"] ? "CategorySelected" : "CategoryUnselected" %>'>>
     </asp:HyperLink>
-    &nbsp;&laquo;
+    &nbsp;
   </ItemTemplate>
   <HeaderTemplate>
-    Choose a Category
+ 
   </HeaderTemplate>
   <HeaderStyle CssClass="CategoryListHead" />
 </asp:DataList><asp:Label ID="brLabel" runat="server" Text="" />
