@@ -18,7 +18,7 @@ namespace OnlineStoreDAL
             DbCommand comm = GenericDataAccess.CreateNewCommand();
             // set the stored procedure name
             //comm.CommandText = "insert into users values(2,'firstname','lastnmae','address','eee@gg.com','sjflsj',GETDATE(),0)";
-            comm.CommandText = "insert into users values('firstname','lastnmae','address','eee@gg.com','sjflsj',GETDATE(),0)";
+            comm.CommandText = "insert into users values('firstname','lastnmae','address','eee@gg.com','sjflsj'," + DateTime.Now + ",0)";
 
             // create a new parameter
            // DbParameter param = comm.CreateParameter();
