@@ -1,5 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/BalloonShop.master" AutoEventWireup="true"
-  CodeFile="Login.aspx.cs" Inherits="Login" Title="Untitled Page" %>
+  CodeFile="AdminLogin.aspx.cs" Inherits="AdminLogin" Title="Untitled Page" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="contentPlaceHolder" runat="Server">
     &nbsp;<asp:Login ID="login" runat="server">
@@ -42,10 +42,6 @@
                 </td>
               </tr>
               <tr>
-              <td align="right" colspan="2">
-                  <asp:Button ID="Button1" runat="server" Text="Register" 
-                      onclick="Button1_Click" />
-                </td>
                 <td align="right" colspan="2">
                   <asp:Button ID="LoginButton" runat="server" CommandName="Login" Text="Log In" 
                         ValidationGroup="Login1" onclick="LoginButton_Click" />

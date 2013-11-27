@@ -10,7 +10,7 @@ using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using OnlineStoreDAL;
 using OnlineStoreDAL.Models;
-public partial class Login : System.Web.UI.Page
+public partial class AdminLogin : System.Web.UI.Page
 {
   protected void Page_Load(object sender, EventArgs e)
   {
@@ -27,10 +27,6 @@ public partial class Login : System.Web.UI.Page
     this.Title = ShopConfiguration.SiteName + " : Login";
     // set focus on the username textbox when the page loads
     usernameTextBox.Focus();
-  }
-  protected void Button1_Click(object sender, EventArgs e)
-  {
-      Response.Redirect("Registration.aspx");
   }
   protected void LoginButton_Click(object sender, EventArgs e)
   {

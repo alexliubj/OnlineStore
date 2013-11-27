@@ -1,10 +1,16 @@
 ﻿
 <%@ Page Language="C#" MasterPageFile="~/BalloonShop.master" AutoEventWireup="true"
   CodeFile="Registration.aspx.cs" Inherits="Registriation" Title="Register" %>
-
+  
 
 <asp:Content ID="Content2" ContentPlaceHolderID="contentPlaceHolder" runat="Server">
     <h4>Registration Form</h4>
+    <script type="text/javascript">
+        function alertMe() {
+            alert('Congratulations!!');
+            window.location.href = "login.aspx";
+        }
+    </script>
 <table class="auto-style2">
     <tr>
         <td>

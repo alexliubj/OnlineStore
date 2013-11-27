@@ -10,7 +10,7 @@ namespace OnlineStoreDAL.Models
     {
         public string first_name { get; set; }
         public string last_name{ get; set; }
-        public decimal Address { get; set; }
+        public string Address { get; set; }
         public string Email{ get; set; }
         public string Password { get; set; }
         public DateTime register_time{ get; set; }        
