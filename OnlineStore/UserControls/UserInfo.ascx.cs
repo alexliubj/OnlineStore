@@ -31,7 +31,7 @@ public partial class UserInfo : System.Web.UI.UserControl
             {
                 testHide.Style.Add("display", "block");
                 loginDiv.Style.Add("display", "none");
-                divWelcome.Style.Add("display", "none");
+                divWelcome.Style.Add("display", "block");
             }
             else if (result == 0)
             {

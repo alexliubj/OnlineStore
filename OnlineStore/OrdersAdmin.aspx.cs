@@ -15,13 +15,35 @@ public partial class OrdersAdmin : System.Web.UI.Page
 {
   protected void Page_Load(object sender, EventArgs e)
   {
-    // Set the title of the page
-    this.Title = ShopConfiguration.SiteName +
-                  " : Orders Admin";
-    // associate the check boxes with their buttons
-    Utilities.TieButton(this.Page, recentCountTextBox, byRecentGo);
-    Utilities.TieButton(this.Page, startDateTextBox, byDateGo);
-    Utilities.TieButton(this.Page, endDateTextBox, byDateGo);
+      int result = 10;
+        if (Session["role_type"] != null)
+        {
+            if (Int32.TryParse(Session["role_type"].ToString(), out result))
+            {
+                result = Int32.Parse(Session["role_type"].ToString());
+            }
+        }
+
+        if (Session["userid"] != null && Session["username"] != null) //login
+        {
+            if (result == 1)
+            {
+                // Set the title of the page
+                this.Title = ShopConfiguration.SiteName +
+                              " : Orders Admin";
+                // associate the check boxes with their buttons
+                Utilities.TieButton(this.Page, recentCountTextBox, byRecentGo);
+                Utilities.TieButton(this.Page, startDateTextBox, byDateGo);
+                Utilities.TieButton(this.Page, endDateTextBox, byDateGo);
+
+            }
+
+            else
+            {
+                Response.Redirect("Oooops.aspx");
+            }
+        }
+       
   }
 
   // list the most recent orders
