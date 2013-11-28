@@ -4,8 +4,20 @@
 &nbsp;&nbsp;
 <asp:HyperLink ID="previousLink" runat="server" CssClass="PagingText" Visible="false">Previous</asp:HyperLink>
 &nbsp;&nbsp;
-<asp:HyperLink ID="nextLink" runat="server" CssClass="PagingText" Visible="false">Next</asp:HyperLink>
-<asp:DataList ID="list" Runat="server" RepeatColumns="3" EnableViewState="False" OnItemCommand="list_ItemCommand">
+<asp:HyperLink ID="nextLink" runat="server" CssClass="PagingText" Visible="false">Next</asp:HyperLink>&nbsp;&nbsp;
+<asp:DropDownList ID="dropDown" runat="server" 
+    onselectedindexchanged="dropDown_SelectedIndexChanged" Visible="False">
+<asp:ListItem>Price: Low - High</asp:ListItem>
+<asp:ListItem>Price: High - Low</asp:ListItem>
+</asp:DropDownList>
+<asp:DataList ID="list" Runat="server" RepeatColumns="3" 
+    EnableViewState="False" OnItemCommand="list_ItemCommand" BackColor="White" 
+    BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" 
+    ForeColor="Black" GridLines="Vertical">
+    <AlternatingItemStyle BackColor="White" />
+    <FooterStyle BackColor="#CCCC99" />
+    <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
+    <ItemStyle BackColor="#F7F7DE" />
   <ItemTemplate>
     <table cellPadding="0" align="left">
       <tr height="105">
@@ -33,4 +45,5 @@
       </tr>
     </table>
   </ItemTemplate>
+    <SelectedItemStyle BackColor="#CE5D5A" Font-Bold="True" ForeColor="White" />
 </asp:DataList>
