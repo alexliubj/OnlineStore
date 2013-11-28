@@ -7,5 +7,6 @@
     <siteMapNode url="ShoppingCart.aspx" title="ShoppingCart"  description="" />
     <siteMapNode url="Catalog.aspx?DepartmentID=1" title="Catalog"  description="" />
     <siteMapNode url="Product.aspx?ProductID=1" title="Products"  description="" />
+    <siteMapNode url="AdminLogin.aspx" title="Admin"  description="" />
   </siteMapNode>
 </siteMap>
