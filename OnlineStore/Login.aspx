@@ -2,7 +2,7 @@
   CodeFile="Login.aspx.cs" Inherits="Login" Title="Untitled Page" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="contentPlaceHolder" runat="Server">
-    &nbsp;<asp:Login ID="login" runat="server">
+    &nbsp;
     <LayoutTemplate>
       <table border="0" cellpadding="1">
         <tr class="UserInfoText">
@@ -56,5 +56,4 @@
         </tr>
       </table>
     </LayoutTemplate>
-  </asp:Login>
 </asp:Content>

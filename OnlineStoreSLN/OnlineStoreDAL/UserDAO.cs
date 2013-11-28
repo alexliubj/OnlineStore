@@ -11,7 +11,46 @@ namespace OnlineStoreDAL
 {
     public class UserDAO
     {
-        // Retrieve the recent orders
+        /// <summary>
+        /// get user by user name 
+        /// </summary>
+        /// <param name="userName"></param>
+        /// <returns></returns>
+        public static Usermodel getUserInfoByUseranme(string userName,string password)
+        {
+            Usermodel model = new Usermodel();
+            DbCommand comm = GenericDataAccess.CreateNewCommand();
+            comm.CommandText = "select user_id,first_name,last_name,address,email,password,role_type from users where email=@email";
+            DbParameter param1 = comm.CreateParameter();
+            param1.ParameterName = "@email";
+            param1.DbType = DbType.String;
+            param1.Value = userName;
+            comm.Parameters.Add(param1);
+            DataTable table = GenericDataAccess.ExecuteSelectCommand(comm);
+            if (table.Rows.Count > 0)
+            {
+                // get the first table row
+                DataRow dr = table.Rows[0];
+                model.user_id = Int32.Parse(dr["user_id"].ToString());
+                model.first_name = dr["first_name"].ToString();
+                model.last_name = dr["last_name"].ToString();
+                model.Address = dr["address"].ToString();
+                model.Email = dr["email"].ToString();
+                model.Password = dr["password"].ToString();
+                model.role_type = Int32.Parse(dr["role_type"].ToString());
+            }
+
+            if (password == model.Password && model.role_type == 1)
+                return model;
+            else
+                return model; 
+        }
+        
+        /// <summary>
+        /// create new user
+        /// </summary>
+        /// <param name="usm"></param>
+        /// <returns></returns>
         public static int CreateUser(Usermodel usm)
         {
             // get a configured DbCommand object

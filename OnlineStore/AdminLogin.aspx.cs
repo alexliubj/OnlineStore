@@ -10,26 +10,29 @@ using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using OnlineStoreDAL;
 using OnlineStoreDAL.Models;
+using OnlineStoreBLO;
 public partial class AdminLogin : System.Web.UI.Page
 {
   protected void Page_Load(object sender, EventArgs e)
   {
-    // get references to the button, checkbox and textboxes
-    TextBox usernameTextBox = (TextBox)login.FindControl("UserName");
-    TextBox passwordTextBox = (TextBox)login.FindControl("Password");
-    CheckBox persistCheckBox = (CheckBox)login.FindControl("RememberMe");
-    Button loginButton = (Button)login.FindControl("LoginButton");
-    // tie the two textboxes and the checkbox to the button
-    Utilities.TieButton(this.Page, usernameTextBox, loginButton);
-    Utilities.TieButton(this.Page, passwordTextBox, loginButton);
-    Utilities.TieButton(this.Page, persistCheckBox, loginButton);
-    // set the page title
-    this.Title = ShopConfiguration.SiteName + " : Login";
-    // set focus on the username textbox when the page loads
-    usernameTextBox.Focus();
+    this.Title = ShopConfiguration.SiteName + " : Admin";
   }
   protected void LoginButton_Click(object sender, EventArgs e)
   {
-
+      TextBox usernameTextBox = UserName;
+      TextBox passwordTextBox = Password;
+      Usermodel model = UserBLO.getUserInfoByUseranme(usernameTextBox.Text, passwordTextBox.Text);
+      if (model != null) // redirect
+      {
+          Session["userid"] = model.user_id.ToString();
+          Session["username"] = model.first_name;
+          Session["useremail"] = model.Email;
+          Session["role_type"] = model.role_type;
+          Response.Redirect("CatalogAdmin.aspx");
+      }
+      else
+      {
+          //alert
+      }
   }
 }

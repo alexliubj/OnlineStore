@@ -14,5 +14,10 @@ namespace OnlineStoreBLO
         {
             return UserDAO.CreateUser(usm);
         }
+
+        public static Usermodel getUserInfoByUseranme(string userName, string password)
+        {
+            return UserDAO.getUserInfoByUseranme(userName, password);
+        }
     }
 }

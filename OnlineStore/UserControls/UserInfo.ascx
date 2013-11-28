@@ -1,40 +1,35 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeFile="UserInfo.ascx.cs" Inherits="UserInfo" %>
+<div>
 <table cellspacing="0" border="0" class="UserInfoContent" style="width: 185px">
-  <tr>
+<tr>
     <td class="UserInfoHead">
       User Info</td>
   </tr>
-  <asp:LoginView ID="LoginView1" runat="server">
-    <AnonymousTemplate>
-      <tr>
+ </table> 
+</div>
+<div id="loginDiv" runat="server">
+<table cellspacing="0" border="0" class="UserInfoContent" style="width: 185px">
+<tr>
         <td>
-          <span class="UserInfoText">Please log in.</span>
+          <span class="UserInfoText">Please log in.</span><asp:Button id="login" 
+                runat="server" onclick="login_Click" Text="Login"/>
         </td>
       </tr>
-      <tr>
+ </table> 
+</div>
+<div id="divWelcome" runat="server">
+<table cellspacing="0" border="0" class="UserInfoContent" style="width: 185px">
+  <tr>
         <td>
-          &nbsp;
-            <asp:LoginStatus ID="LoginStatus1" runat="server" CssClass="UserInfoLink" />
-          &nbsp;
+          <span class="UserInfoText">Welcome </span><asp:Label ID="Label1" runat="server"></asp:Label>
+            <asp:Button id="Button1" 
+                runat="server" Text="Logout" onclick="Button1_Click"/>
         </td>
       </tr>
-    </AnonymousTemplate>
-    <RoleGroups>
-      <asp:RoleGroup Roles="Administrators">
-        <ContentTemplate>
-          <tr>
-            <td>
-              <asp:LoginName ID="LoginName2" runat="server" FormatString="Welcome <b>{0}</b>."
-                CssClass="UserInfoText" />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              &nbsp;
-                <asp:LoginStatus ID="LoginStatus2" runat="server" CssClass="UserInfoLink" />
-              &nbsp;
-            </td>
-          </tr>
+      </table>
+</div>
+<div id="testHide" runat="server">
+<table cellspacing="0" border="0" class="UserInfoContent" style="width: 185px">
           <tr>
             <td>
               &nbsp;
@@ -56,8 +51,5 @@
               &nbsp;
             </td>
           </tr>
-        </ContentTemplate>
-      </asp:RoleGroup>
-    </RoleGroups>
-  </asp:LoginView>
 </table>
+</div>
