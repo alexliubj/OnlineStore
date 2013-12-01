@@ -6,14 +6,14 @@
 &nbsp;&nbsp;
 <asp:HyperLink ID="nextLink" runat="server" CssClass="PagingText" Visible="false">Next</asp:HyperLink>&nbsp;&nbsp;
 <asp:DropDownList ID="dropDown" runat="server" 
-    onselectedindexchanged="dropDown_SelectedIndexChanged" Visible="False">
+    onselectedindexchanged="dropDown_SelectedIndexChanged" Visible="False" AutoPostBack="true">
 <asp:ListItem>Price: Low - High</asp:ListItem>
 <asp:ListItem>Price: High - Low</asp:ListItem>
 </asp:DropDownList>
 <asp:DataList ID="list" Runat="server" RepeatColumns="3" 
     EnableViewState="False" OnItemCommand="list_ItemCommand" BackColor="White" 
     BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" 
-    ForeColor="Black" GridLines="Vertical">
+    ForeColor="Black" GridLines="Vertical" RepeatDirection="Horizontal">
     <AlternatingItemStyle BackColor="White" />
     <FooterStyle BackColor="#CCCC99" />
     <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />

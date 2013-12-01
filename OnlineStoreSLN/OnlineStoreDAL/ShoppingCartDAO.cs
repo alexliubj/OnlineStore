@@ -275,7 +275,7 @@ namespace OnlineStoreDAL
         }
 
         // Create a new order from the shopping cart
-        public static string CreateOrder()
+        public static string CreateOrder(string customerName, string customerEmail,string customerAdderss)
         {
             // get a configured DbCommand object
             DbCommand comm = GenericDataAccess.CreateCommand();
@@ -288,6 +288,28 @@ namespace OnlineStoreDAL
             param.DbType = DbType.String;
             param.Size = 36;
             comm.Parameters.Add(param);
+
+            param = comm.CreateParameter();
+            param.ParameterName = "@CustomerName";
+            param.Value = customerName == null ? string.Empty : customerName;
+            param.DbType = DbType.String;
+            //param.Size = 36;
+            comm.Parameters.Add(param);
+
+            param = comm.CreateParameter();
+            param.ParameterName = "@CustomerEmail";
+            param.Value = customerEmail == null ? string.Empty : customerAdderss ;
+            param.DbType = DbType.String;
+            //param.Size = 36;
+            comm.Parameters.Add(param);
+
+            param = comm.CreateParameter();
+            param.ParameterName = "@ShippingAddress";
+            param.Value = customerAdderss == null ? string.Empty : customerAdderss;
+            param.DbType = DbType.String;
+            //param.Size = 36;
+            comm.Parameters.Add(param);
+
             // return the result table
             return GenericDataAccess.ExecuteScalar(comm);
         }

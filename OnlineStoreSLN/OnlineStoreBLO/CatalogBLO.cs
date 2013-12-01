@@ -30,10 +30,10 @@ namespace OnlineStoreBLO
         public static DataTable GetProductsOnCatalogPromotion(string pageNumber, out int howManyPages) { return CatalogDAO.GetProductsOnCatalogPromotion(pageNumber, out howManyPages); }
 
         // retrieve the list of products featured for a department
-        public static DataTable GetProductsOnDepartmentPromotion(string departmentId, string pageNumber, out int howManyPages) { return CatalogDAO.GetProductsOnDepartmentPromotion(departmentId, pageNumber, out howManyPages); }
+        public static DataTable GetProductsOnDepartmentPromotion(string departmentId, string pageNumber, out int howManyPages, int ord) { return CatalogDAO.GetProductsOnDepartmentPromotion(departmentId, pageNumber, out howManyPages, ord); }
 
         // retrieve the list of products in a category
-        public static DataTable GetProductsInCategory(string categoryId, string pageNumber, out int howManyPages) { return CatalogDAO.GetProductsInCategory(categoryId, pageNumber, out howManyPages); }
+        public static DataTable GetProductsInCategory(string categoryId, string pageNumber, out int howManyPages, int odb) { return CatalogDAO.GetProductsInCategory(categoryId, pageNumber, out howManyPages, odb); }
 
         // Search the product catalog
         public static DataTable Search(string searchString, string allWords, string pageNumber, out int howManyPages) { return CatalogDAO.Search(searchString, pageNumber, allWords, out howManyPages); }

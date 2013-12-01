@@ -33,6 +33,7 @@ public partial class Login : System.Web.UI.Page
         Session["userid"] = model.user_id.ToString();
         Session["username"] = model.first_name;
         Session["useremail"] = model.Email;
+        Session["useraddress"] = model.Address;
         Session["role_type"] = model.role_type;
         Response.Redirect("Default.aspx");
     }

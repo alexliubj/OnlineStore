@@ -34,7 +34,9 @@ namespace OnlineStoreBLO
         public static bool DeleteOldCarts(byte days) { return ShoppingCartDAO.DeleteOldCarts(days); }
 
         // Create a new order from the shopping cart
-        public static string CreateOrder() { return ShoppingCartDAO.CreateOrder(); }
+        public static string CreateOrder(string customerName, string customerEmail, string customerAdderss) { 
+            return ShoppingCartDAO.CreateOrder(customerEmail,customerEmail,customerAdderss);
+        }
 
         // gets product recommendations for the shopping cart
         public static DataTable GetRecommendations() { return ShoppingCartDAO.GetRecommendations(); }

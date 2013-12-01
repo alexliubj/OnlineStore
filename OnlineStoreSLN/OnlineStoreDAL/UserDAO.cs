@@ -40,10 +40,10 @@ namespace OnlineStoreDAL
                 model.role_type = Int32.Parse(dr["role_type"].ToString());
             }
 
-            if (password == model.Password && model.role_type == 1)
+            if (password == model.Password)
                 return model;
             else
-                return model; 
+                return null; 
         }
         
         /// <summary>

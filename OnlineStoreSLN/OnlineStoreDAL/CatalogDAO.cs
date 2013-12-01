@@ -174,7 +174,7 @@ namespace OnlineStoreDAL
         }
 
         // retrieve the list of products featured for a department
-        public static DataTable GetProductsOnDepartmentPromotion(string departmentId, string pageNumber, out int howManyPages)
+        public static DataTable GetProductsOnDepartmentPromotion(string departmentId, string pageNumber, out int howManyPages, int ord)
         {
             // get a configured DbCommand object
             DbCommand comm = GenericDataAccess.CreateCommand();
@@ -210,6 +210,13 @@ namespace OnlineStoreDAL
             param.Direction = ParameterDirection.Output;
             param.DbType = DbType.Int32;
             comm.Parameters.Add(param);
+
+            param = comm.CreateParameter();
+            param.ParameterName = "@ord";
+            param.Value = ord;
+            param.DbType = DbType.Int32;
+            comm.Parameters.Add(param);
+            
             // execute the stored procedure and save the results in a DataTable
             DataTable table = GenericDataAccess.ExecuteSelectCommand(comm);
             // calculate how many pages of products and set the out parameter
@@ -221,7 +228,7 @@ namespace OnlineStoreDAL
         }
 
         // retrieve the list of products in a category
-        public static DataTable GetProductsInCategory(string categoryId, string pageNumber, out int howManyPages)
+        public static DataTable GetProductsInCategory(string categoryId, string pageNumber, out int howManyPages, int ordb)
         {
             // get a configured DbCommand object
             DbCommand comm = GenericDataAccess.CreateCommand();
@@ -257,6 +264,13 @@ namespace OnlineStoreDAL
             param.Direction = ParameterDirection.Output;
             param.DbType = DbType.Int32;
             comm.Parameters.Add(param);
+
+            param = comm.CreateParameter();
+            param.ParameterName = "@orb";
+            param.Value = ordb;
+            param.DbType = DbType.Int32;
+            comm.Parameters.Add(param);
+
             // execute the stored procedure and save the results in a DataTable
             DataTable table = GenericDataAccess.ExecuteSelectCommand(comm);
             // calculate how many pages of products and set the out parameter

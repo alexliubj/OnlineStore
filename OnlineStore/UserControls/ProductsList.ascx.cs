@@ -14,8 +14,10 @@ using OnlineStoreDAL.Models;
 using OnlineStoreBLO;
 public partial class ProductsList : System.Web.UI.UserControl
 {
+    private int odr = 0;
     protected void Page_Load(object sender, EventArgs e)
     {
+        odr = dropDown.SelectedIndex;
         PopulateControls();
     }
 
@@ -45,13 +47,13 @@ public partial class ProductsList : System.Web.UI.UserControl
         else if (categoryId != null)
         {
             // Retrieve list of products in a category
-            list.DataSource = CatalogBLO.GetProductsInCategory(categoryId, page, out howManyPages);
+            list.DataSource = CatalogBLO.GetProductsInCategory(categoryId, page, out howManyPages, odr);
             list.DataBind();
         }
         else if (departmentId != null)
         {
             // Retrieve list of products on department promotion
-            list.DataSource = CatalogBLO.GetProductsOnDepartmentPromotion(departmentId, page, out howManyPages);
+            list.DataSource = CatalogBLO.GetProductsOnDepartmentPromotion(departmentId, page, out howManyPages, odr);
             list.DataBind();
         }
         else
@@ -118,6 +120,6 @@ public partial class ProductsList : System.Web.UI.UserControl
     }
     protected void dropDown_SelectedIndexChanged(object sender, EventArgs e)
     {
-        dropDown.DataBind();
+       odr =  dropDown.SelectedIndex;
     }
 }

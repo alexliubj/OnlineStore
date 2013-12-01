@@ -134,12 +134,16 @@ public partial class ShoppingCart : System.Web.UI.Page
     // is emptied when creating the order
     decimal amount = ShoppingCartBLO.GetTotalAmount();
     // Create the order and store the order ID
-    string orderId = ShoppingCartBLO.CreateOrder();
+    string username = Session["username"] == null ? null : Session["username"].ToString();
+    string customerEmail = Session["useremail"] == null ? null : Session["useremail"].ToString();
+    string custoemrAddress = Session["useraddress"] == null ? null : Session["useraddress"].ToString();
+
+    string orderId = ShoppingCartBLO.CreateOrder(username, customerEmail, custoemrAddress);
     // Obtain the site name from the configuration settings
     string siteName = ShopConfiguration.SiteName;
     // Create the PayPal redirect location
     string redirect = "";
-    redirect += "https://www.paypal.com/xclick/business=balloonshop@gmail.com";
+    redirect += "https://www.paypal.com/xclick/business=alexliubo@gmail.com";
     redirect += "&item_name=" + siteName + " Order " + orderId;
     redirect += "&item_number=" + orderId;
     redirect += "&amount=" + String.Format("{0:0.00} ", amount);
