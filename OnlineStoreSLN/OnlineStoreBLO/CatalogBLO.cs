@@ -36,7 +36,7 @@ namespace OnlineStoreBLO
         public static DataTable GetProductsInCategory(string categoryId, string pageNumber, out int howManyPages, int odb) { return CatalogDAO.GetProductsInCategory(categoryId, pageNumber, out howManyPages, odb); }
 
         // Search the product catalog
-        public static DataTable Search(string searchString, string allWords, string pageNumber, out int howManyPages) { return CatalogDAO.Search(searchString, pageNumber, allWords, out howManyPages); }
+        public static DataTable Search(string searchString, string allWords, string pageNumber, out int howManyPages) { return CatalogDAO.Search(searchString,allWords, pageNumber, out howManyPages); }
 
         // Update department details
         public static bool UpdateDepartment(string id, string name, string description) { return CatalogDAO.UpdateDepartment(id, name, description); }
