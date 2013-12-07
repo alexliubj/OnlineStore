@@ -63,7 +63,7 @@
             <asp:Label ID="Label5" runat="server" Text="Password:"></asp:Label>
         </td>
         <td>
-            <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
         </td>
         <td>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtPassword" ErrorMessage="Password is required."></asp:RequiredFieldValidator>
@@ -75,7 +75,7 @@
             <asp:Label ID="Label6" runat="server" Text="Confirm Password:"></asp:Label>
         </td>
         <td>
-            <asp:TextBox ID="txtConfirm" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtConfirm" runat="server" TextMode="Password"></asp:TextBox>
         </td>
         <td>
             <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtPassword" ControlToValidate="txtConfirm" ErrorMessage="Passwords don't match."></asp:CompareValidator>
